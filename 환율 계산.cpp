@@ -1,11 +1,14 @@
 #include <stdio.h>   
-
+#include <stdbool.h>   // bool, true, false가  정의된 헤더 파일
+ 
 int main(){
-    while(true) {const float RATE_USD = 1233.1;
+    while(true) {
+	const float RATE_USD = 1233.1;
 	const float RATE_JPY = 9.8644; // 일본 엔화 
 	const float RATE_EUR = 1342.63; //  유로 
 	const float RATE_CNY = 193.19; // 중국 위안 
 	const float RATE_GBP = 1604.52; // 영국 파운드  
+	printf("*********************************************************************************\n");
 	printf("환전을 원하는 원화 금액을 입력하세요 : ");
 	int inputWon;
 	int inputNumber;
@@ -110,7 +113,9 @@ int main(){
 	int d4 = realExchangeWon4%1000%500%100/50;
 	int e4 = realExchangeWon4%1000%500%100%50/10;
 	printf("%d원-> 환전 위안  %d위안\n100 CNY : %d, 50 CNY : %d, 20 CNY : %d, 10 CNY : %d, 5 CNY : %d, 1 CNY : %d\n", inputWon, realExchangeCNY,CNY100,CNY50,CNY20,CNY10,CNY5,CNY1);
-	printf("남은 위안  %.2f 위안  잔돈 %d원 1000원 : %d개 500원 : %d개 100원 : %d개 50원 : %d개 10원 : %d개 \n\n", exchange4,realExchangeWon4,a4,b4,c4,d4,e4);}
+	printf("남은 위안  %.2f 위안  잔돈 %d원 1000원 : %d개 500원 : %d개 100원 : %d개 50원 : %d개 10원 : %d개 \n\n", exchange4,realExchangeWon4,a4,b4,c4,d4,e4);
+	
+	}
 	
 	// 파운드  
 	else if (inputNumber == 5) {
@@ -134,9 +139,11 @@ int main(){
 	int e5 = realExchangeWon5%1000%500%100%50/10;
 	printf("%d원-> 환전 파운드 %d파운드\n100 GBP : %d, 50 GBP : %d, 20 GBP : %d, 10 GBP : %d, 5 GBP : %d, 2 GBP : %d, 1 GBP : %d\n", inputWon, realExchangeGBP,GBP100,GBP50,GBP20,GBP10,GBP5,GBP2,GBP1);
 	printf("남은 파운드  %.2f 파운드  잔돈 %d원 1000원 : %d개 500원 : %d개 100원 : %d개 50원 : %d개 10원 : %d개 \n\n", exchange5,realExchangeWon5,a5,b5,c5,d5,e5);
+	
 }
-   else {
+   else 
    	printf("다시 입력하세요\n\n");
-   }
+    
 }
+	return 0; 
 }
