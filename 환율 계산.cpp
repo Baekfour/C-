@@ -12,7 +12,7 @@ int main(){
 	scanf("%d", &inputWon);
 	printf("환전을 원하는 외화를 입력하세요(1. 달러 2. 엔화 3.유로 4. 위안 5. 파운드)");
 	scanf("%d", &inputNumber);
-	printf("\n\n");
+	printf("\n");
 	
 	//달러 
 	if(inputNumber == 1){
@@ -135,5 +135,8 @@ int main(){
 	printf("%d원-> 환전 파운드 %d파운드\n100 GBP : %d, 50 GBP : %d, 20 GBP : %d, 10 GBP : %d, 5 GBP : %d, 2 GBP : %d, 1 GBP : %d\n", inputWon, realExchangeGBP,GBP100,GBP50,GBP20,GBP10,GBP5,GBP2,GBP1);
 	printf("남은 파운드  %.2f 파운드  잔돈 %d원 1000원 : %d개 500원 : %d개 100원 : %d개 50원 : %d개 10원 : %d개 \n\n", exchange5,realExchangeWon5,a5,b5,c5,d5,e5);
 }
+   else {
+   	printf("다시 입력하세요\n\n");
+   }
 }
 }
