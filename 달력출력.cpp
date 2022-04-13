@@ -21,7 +21,8 @@ int main() {
         int monthfirst10 = 0;
         int monthfirst11 = 0;
         int monthfirst12 = 0;
-        //매년 1월 1일이 무슨요일인지 확인 
+       
+	    //매년 1월 1일이 무슨요일인지 확인 
         for (int index1 = 1900; index1 < inputYear; index1++) {
             if ((index1 % 4 == 0 && index1 % 100 != 0) || index1 % 400 == 0) {
                 day += 2;
@@ -102,7 +103,7 @@ int main() {
             } else if (inputMonth == 11) {
                 monthfirstday = monthfirst11;
             } else if (inputMonth == 12) {
-                monthfirstday = monthfirst12;
+                monthfirstday = monthfirst12; // 해당 년에서 해당 월의 요일 확인  
             }
         }
         const int WIDTH = 7;
