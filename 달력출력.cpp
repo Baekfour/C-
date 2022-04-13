@@ -220,5 +220,5 @@ int main() {
             }
 
          printf("\n\n");
-    } //while(true) ¸¶¹«¸® 
+    } 
 }
